@@ -10,6 +10,8 @@ if year % 4 == 0:
         isLeap = False
         if year % 400 == 0:
             isLeap = True
+else:
+    isLeap = False
 
 if isLeap is True:
     print("Leap")
