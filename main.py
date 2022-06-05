@@ -3,17 +3,13 @@
 # unless it is also divisible by 400
 
 year = int(input("Enter the year that you want to test : "))
-isLeap = True
 if year % 4 == 0:
-    isLeap = True
     if year % 100 == 0:
-        isLeap = False
         if year % 400 == 0:
-            isLeap = True
+            print("IS a leap year.")
+        else:
+            print("NOT a leap year.")
+    else:
+        print("NOT a leap year.")
 else:
-    isLeap = False
-
-if isLeap is True:
-    print("Leap")
-else:
-    print("NOT leap")
+    print("NOT a leap year.")
